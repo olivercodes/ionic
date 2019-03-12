@@ -1119,6 +1119,9 @@ export namespace Components {
     'scrollY'?: boolean;
   }
 
+  interface IonDatePicker {}
+  interface IonDatePickerAttributes extends StencilHTMLAttributes {}
+
   interface IonDatetime {
     /**
     * The text to display on the picker's cancel button.
@@ -5097,6 +5100,7 @@ declare global {
     'IonChip': Components.IonChip;
     'IonCol': Components.IonCol;
     'IonContent': Components.IonContent;
+    'IonDatePicker': Components.IonDatePicker;
     'IonDatetime': Components.IonDatetime;
     'IonFabButton': Components.IonFabButton;
     'IonFabList': Components.IonFabList;
@@ -5197,6 +5201,7 @@ declare global {
     'ion-chip': Components.IonChipAttributes;
     'ion-col': Components.IonColAttributes;
     'ion-content': Components.IonContentAttributes;
+    'ion-date-picker': Components.IonDatePickerAttributes;
     'ion-datetime': Components.IonDatetimeAttributes;
     'ion-fab-button': Components.IonFabButtonAttributes;
     'ion-fab-list': Components.IonFabListAttributes;
@@ -5400,6 +5405,12 @@ declare global {
   var HTMLIonContentElement: {
     prototype: HTMLIonContentElement;
     new (): HTMLIonContentElement;
+  };
+
+  interface HTMLIonDatePickerElement extends Components.IonDatePicker, HTMLStencilElement {}
+  var HTMLIonDatePickerElement: {
+    prototype: HTMLIonDatePickerElement;
+    new (): HTMLIonDatePickerElement;
   };
 
   interface HTMLIonDatetimeElement extends Components.IonDatetime, HTMLStencilElement {}
@@ -5880,6 +5891,7 @@ declare global {
     'ion-chip': HTMLIonChipElement
     'ion-col': HTMLIonColElement
     'ion-content': HTMLIonContentElement
+    'ion-date-picker': HTMLIonDatePickerElement
     'ion-datetime': HTMLIonDatetimeElement
     'ion-fab-button': HTMLIonFabButtonElement
     'ion-fab-list': HTMLIonFabListElement
@@ -5980,6 +5992,7 @@ declare global {
     'ion-chip': HTMLIonChipElement;
     'ion-col': HTMLIonColElement;
     'ion-content': HTMLIonContentElement;
+    'ion-date-picker': HTMLIonDatePickerElement;
     'ion-datetime': HTMLIonDatetimeElement;
     'ion-fab-button': HTMLIonFabButtonElement;
     'ion-fab-list': HTMLIonFabListElement;

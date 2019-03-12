@@ -7,6 +7,7 @@ import { apiSpecGenerator } from './scripts/api-spec-generator';
 export const config: Config = {
   namespace: 'Ionic',
   bundles: [
+    { components: ['ion-date-picker']},
     { components: ['ion-action-sheet', 'ion-action-sheet-controller'] },
     { components: ['ion-alert', 'ion-alert-controller'] },
     { components: ['ion-anchor', 'ion-back-button'] },
